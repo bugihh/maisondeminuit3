@@ -42,36 +42,43 @@ button, input, select, textarea { font: inherit; }
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1000;
-  background: linear-gradient(180deg, rgba(8,8,8,0.78), rgba(8,8,8,0.38), transparent);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(180deg, rgba(7,7,7,0.82), rgba(7,7,7,0.46), rgba(7,7,7,0.12));
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
 }
 
 .header-inner {
-  min-height: 96px;
+  min-height: 104px;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
 }
 
 .brand {
-  max-width: 245px;
+  max-width: 290px;
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .brand-logo {
   width: 100%;
   height: auto;
   object-fit: contain;
-  filter: brightness(1.04);
+  display: block;
+}
+
+.brand-logo--dark {
+  max-width: 290px;
+  opacity: 0.96;
 }
 
 .desktop-nav {
   display: flex;
   justify-content: center;
   gap: 34px;
-  color: rgba(243,237,226,0.82);
+  color: rgba(243,237,226,0.76);
   font-size: 0.93rem;
 }
 
@@ -146,9 +153,9 @@ button, input, select, textarea { font: inherit; }
 }
 
 .button-outline {
-  background: transparent;
+  background: rgba(255,255,255,0.02);
   color: var(--text);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(183,146,90,0.22);
 }
 
 .menu-toggle {
@@ -513,10 +520,29 @@ textarea { min-height: 150px; resize: vertical; }
 }
 
 @media (max-width: 720px) {
-  .header-inner { min-height: 82px; }
-  .brand { max-width: 185px; }
-  .hero-inner { padding-top: 138px; }
-  h1 { max-width: 7.8ch; }
+  .header-inner {
+    min-height: 86px;
+  }
+
+  .brand {
+    max-width: 200px;
+  }
+
+  .brand-logo--dark {
+    max-width: 200px;
+    opacity: 0.96;
+  }
+
+  .hero-inner {
+    padding-top: 138px;
+  }
+
+  h1 {
+    max-width: 7.8ch;
+  }
+
   .header-actions,
-  .hero-actions { flex-wrap: wrap; }
+  .hero-actions {
+    flex-wrap: wrap;
+  }
 }
