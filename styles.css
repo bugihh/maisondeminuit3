@@ -215,15 +215,15 @@ button, input, select, textarea { font: inherit; }
   display: grid;
   align-items: end;
   background:
-    linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.52) 100%),
-    url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2200&q=80') center/cover;
+    linear-gradient(180deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.58) 100%),
+    url('home.png') center/cover;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(15,14,13,0.86) 0%, rgba(15,14,13,0.54) 34%, rgba(15,14,13,0.12) 76%);
+  background: linear-gradient(90deg, rgba(15,14,13,0.82) 0%, rgba(15,14,13,0.46) 34%, rgba(15,14,13,0.10) 76%);
 }
 
 .hero-inner {
