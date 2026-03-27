@@ -171,16 +171,16 @@ function setLanguage(lang) {
     document.documentElement.lang = 'de';
     pageTitle.textContent = 'Maison de Minuit';
     metaDescription.setAttribute('content', 'Maison de Minuit – Private Date-Erlebnisse in Hamburg.');
-    nameInput.placeholder = 'Ihr Name';
-    emailInput.placeholder = 'Ihre E-Mail';
-    messageInput.placeholder = 'Erzählen Sie uns kurz von Ihrem Anlass und Ihren Wünschen.';
+    if (nameInput) nameInput.placeholder = 'Ihr Name';
+    if (emailInput) emailInput.placeholder = 'Ihre E-Mail';
+    if (messageInput) messageInput.placeholder = 'Erzählen Sie uns kurz von Ihrem Anlass und Ihren Wünschen.';
   } else {
     document.documentElement.lang = 'en';
     pageTitle.textContent = 'Maison de Minuit';
     metaDescription.setAttribute('content', 'Maison de Minuit – Private date experiences in Hamburg.');
-    nameInput.placeholder = 'Your name';
-    emailInput.placeholder = 'Your email';
-    messageInput.placeholder = 'Tell us a little about your occasion and what you have in mind.';
+    if (nameInput) nameInput.placeholder = 'Your name';
+    if (emailInput) emailInput.placeholder = 'Your email';
+    if (messageInput) messageInput.placeholder = 'Tell us a little about your occasion and what you have in mind.';
   }
 
   langButtons.forEach((button) => button.classList.toggle('active', button.dataset.lang === lang));
@@ -191,17 +191,19 @@ langButtons.forEach((button) => {
   button.addEventListener('click', () => setLanguage(button.dataset.lang));
 });
 
-menuToggle.addEventListener('click', () => {
-  const isOpen = mobilePanel.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', String(isOpen));
-});
-
-document.querySelectorAll('.mobile-panel a').forEach((link) => {
-  link.addEventListener('click', () => {
-    mobilePanel.classList.remove('open');
-    menuToggle.setAttribute('aria-expanded', 'false');
+if (menuToggle && mobilePanel) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mobilePanel.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
-});
+
+  document.querySelectorAll('.mobile-panel a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobilePanel.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
 
 faqItems.forEach((item) => {
   const button = item.querySelector('.faq-question');
@@ -228,4 +230,8 @@ faqItems.forEach((item) => {
 
 const savedLanguage = localStorage.getItem('mdm-language') || 'de';
 setLanguage(savedLanguage);
-document.getElementById('year').textContent = new Date().getFullYear();
+
+const yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
