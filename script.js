@@ -1,6 +1,7 @@
 const translations = {
   de: {
     navConcept: 'Konzept',
+    navOffer: 'Angebot',
     navExperience: 'Erlebnis',
     navFaq: 'FAQ',
     navContact: 'Kontakt',
@@ -13,16 +14,31 @@ const translations = {
     meta1: 'Reservierungsbasiert',
     meta2: 'Diskret',
     meta3: 'Für besondere Anlässe',
+
+    offerLabel: 'Das Angebot',
+    offerTitle: 'Was den Abend besonders macht.',
+    offerText: 'Ein privater Rahmen mit ausgewählten Bereichen, die den Abend ruhig, stilvoll und abwechslungsreich gestalten.',
+    offer1Title: 'Offene Küche mit Dining Area',
+    offer1Text: 'Ein einladender Bereich für gemeinsames Kochen, Gespräche und einen stilvollen Auftakt des Abends.',
+    offer2Title: 'Gaming Room',
+    offer2Text: 'Ein spielerischer, hochwertiger Raum für leichte Interaktion und eine aufgelockerte Atmosphäre.',
+    offer3Title: 'Gemütlicher Living Room',
+    offer3Text: 'Ein ruhiger Rückzugsort mit wohnlicher Eleganz für entspannte gemeinsame Zeit.',
+    offer4Title: 'Voll ausgestattetes Home Cinema',
+    offer4Text: 'Ein privater Kinoraum für einen stilvollen und intimen Ausklang des Erlebnisses.',
+
     conceptLabel: 'Das Konzept',
     conceptTitle: 'Privatsphäre, Atmosphäre und Zurückhaltung.',
     quoteText: 'Eine ruhigere und elegantere Alternative zum Erwartbaren.',
     conceptText: 'Das Konzept ist bewusst selektiv. Statt einer überladenen Abfolge von Eindrücken setzt Maison de Minuit auf Privatsphäre, Klarheit und einen Rahmen, der von Anfang bis Ende stimmig wirkt.',
+
     info1Title: 'Privater Rahmen',
     info1Text: 'Ein reserviertes Umfeld für zwei, fern von Tempo und Ablenkung öffentlicher Orte.',
     info2Title: 'Kuratiertes Ambiente',
     info2Text: 'Licht, Raum, Rhythmus und Stimmung sind bewusst gestaltet, um ein ruhiges und gehobenes Erlebnis zu schaffen.',
     info3Title: 'Ausgewählte Anlässe',
     info3Text: 'Besonders passend für Jubiläen, Anträge, bedeutende Überraschungen und Abende, die mehr Diskretion verdienen.',
+
     experienceLabel: 'Das Erlebnis',
     experienceTitle: 'Ein Erlebnis, das mit Absicht gestaltet ist.',
     detail1Title: 'Ankommen',
@@ -31,6 +47,7 @@ const translations = {
     detail2Text: 'Gespräch, Kochen, leichte Verspieltheit und stille Momente entwickeln sich natürlich, ohne geplant zu wirken.',
     detail3Title: 'Privater Ausklang',
     detail3Text: 'Das Erlebnis endet in einer intimeren Atmosphäre, die auf Ruhe, Komfort und Präsenz ausgerichtet ist.',
+
     faqTitle: 'Wichtige Informationen auf einen Blick.',
     faqText: 'Die wesentlichen Punkte klar und diskret zusammengefasst.',
     faq1Q: 'Ist das eine Übernachtung?',
@@ -39,6 +56,7 @@ const translations = {
     faq2A: 'Nein. Nur freigegebene Bereiche gehören zum Erlebnis. Private Zonen bleiben geschlossen.',
     faq3Q: 'Ist das für Partys gedacht?',
     faq3A: 'Nein. Das Konzept richtet sich an stilvolle, private Abende für Paare und nicht an Partys oder größere Gruppen.',
+
     contactLabel: 'Kontakt',
     contactTitle: 'Unverbindlich anfragen.',
     contactText: 'Teilen Sie Anlass, Wunschtermin und Ihre Vorstellung mit. Wir melden uns persönlich zurück.',
@@ -55,8 +73,10 @@ const translations = {
     formSubmit: 'Anfrage senden',
     footerText: 'Private luxury date experiences in Hamburg.'
   },
+
   en: {
     navConcept: 'Concept',
+    navOffer: 'Offer',
     navExperience: 'Experience',
     navFaq: 'FAQ',
     navContact: 'Contact',
@@ -69,16 +89,31 @@ const translations = {
     meta1: 'Reservation-based',
     meta2: 'Discrete',
     meta3: 'For special occasions',
+
+    offerLabel: 'The offer',
+    offerTitle: 'What makes the evening exceptional.',
+    offerText: 'A private setting with selected spaces designed to create a calm, refined, and memorable experience.',
+    offer1Title: 'Open kitchen with dining area',
+    offer1Text: 'An inviting space for cooking together, conversation, and a refined beginning to the evening.',
+    offer2Title: 'Gaming room',
+    offer2Text: 'A playful yet elevated setting for light interaction and a more relaxed atmosphere.',
+    offer3Title: 'Cozy living room',
+    offer3Text: 'A calm retreat with residential elegance for relaxed time together.',
+    offer4Title: 'Fully equipped home cinema',
+    offer4Text: 'A private cinema room for a stylish and intimate close to the experience.',
+
     conceptLabel: 'The concept',
     conceptTitle: 'Privacy, atmosphere, and restraint.',
     quoteText: 'A quieter, more refined alternative to the expected date night.',
     conceptText: 'The concept is intentionally selective. Rather than offering a crowded sequence of experiences, Maison de Minuit focuses on privacy, clarity, and a setting designed to feel composed from beginning to end.',
+
     info1Title: 'Private setting',
     info1Text: 'A reserved environment created for two, away from the pace and distractions of public venues.',
     info2Title: 'Curated atmosphere',
     info2Text: 'Light, space, rhythm, and mood are considered with intention to create a calm and elevated experience.',
     info3Title: 'Select occasions',
     info3Text: 'Especially suited to anniversaries, proposals, meaningful surprises, and evenings that deserve greater discretion.',
+
     experienceLabel: 'The experience',
     experienceTitle: 'An experience shaped with intention.',
     detail1Title: 'Arrival',
@@ -87,6 +122,7 @@ const translations = {
     detail2Text: 'Conversation, cooking, light playfulness, and quiet moments unfold naturally without feeling scheduled.',
     detail3Title: 'Private close',
     detail3Text: 'The experience concludes in a more intimate atmosphere designed for stillness, comfort, and presence.',
+
     faqTitle: 'Important details at a glance.',
     faqText: 'Essential information presented clearly and discreetly.',
     faq1Q: 'Is this an overnight stay?',
@@ -95,6 +131,7 @@ const translations = {
     faq2A: 'No. Only approved areas are part of the experience. Private zones remain closed.',
     faq3Q: 'Is this designed for parties?',
     faq3A: 'No. The concept is for stylish private evenings for couples, not for parties or larger groups.',
+
     contactLabel: 'Contact',
     contactTitle: 'Submit your inquiry.',
     contactText: 'Share your occasion, preferred date, and what you have in mind. We will respond personally.',
@@ -150,7 +187,9 @@ function setLanguage(lang) {
   localStorage.setItem('mdm-language', lang);
 }
 
-langButtons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
+langButtons.forEach((button) => {
+  button.addEventListener('click', () => setLanguage(button.dataset.lang));
+});
 
 menuToggle.addEventListener('click', () => {
   const isOpen = mobilePanel.classList.toggle('open');
@@ -167,7 +206,10 @@ document.querySelectorAll('.mobile-panel a').forEach((link) => {
 faqItems.forEach((item) => {
   const button = item.querySelector('.faq-question');
   const answer = item.querySelector('.faq-answer');
-  if (item.classList.contains('open')) answer.style.maxHeight = `${answer.scrollHeight}px`;
+
+  if (item.classList.contains('open')) {
+    answer.style.maxHeight = `${answer.scrollHeight}px`;
+  }
 
   button.addEventListener('click', () => {
     const isOpen = item.classList.contains('open');
