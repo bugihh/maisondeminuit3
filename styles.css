@@ -216,7 +216,7 @@ button, input, select, textarea { font: inherit; }
   align-items: end;
   background-image:
     linear-gradient(180deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.58) 100%),
-    url('images/home.png');
+    url('./images/home.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
