@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison de Minuit</title>
+  <meta name="description" content="Maison de Minuit – Private Date-Erlebnisse in Hamburg." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Maison de Minuit">
+        <img src="images/logo.png" alt="Maison de Minuit logo" class="brand-logo" />
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a href="#concept" data-i18n="navConcept">Konzept</a>
+        <a href="#experience" data-i18n="navExperience">Erlebnis</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <a href="#contact" data-i18n="navContact">Kontakt</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="de" type="button">DE</button>
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
+        </div>
+        <a href="#contact" class="button button-outline" data-i18n="headerCta">Anfrage</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" id="mobilePanel">
+      <div class="container mobile-panel-inner">
+        <a href="#concept" data-i18n="navConcept">Konzept</a>
+        <a href="#experience" data-i18n="navExperience">Erlebnis</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <a href="#contact" data-i18n="navContact">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Private Date Experience · Hamburg</p>
+          <h1 data-i18n="heroTitle">A private date experience in an exceptional setting.</h1>
+          <p class="lead" data-i18n="heroText">Maison de Minuit offers a private setting for couples seeking discretion, atmosphere, and a more elevated way to spend time together.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="button button-solid" data-i18n="heroPrimary">Privaten Abend anfragen</a>
+            <a href="#experience" class="button button-outline" data-i18n="heroSecondary">Mehr erfahren</a>
+          </div>
+          <div class="hero-meta">
+            <span data-i18n="meta1">Reservierungsbasiert</span>
+            <span data-i18n="meta2">Diskret</span>
+            <span data-i18n="meta3">Für besondere Anlässe</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="concept">
+      <div class="container intro-wrap">
+        <div>
+          <p class="section-label" data-i18n="conceptLabel">Das Konzept</p>
+          <h2 data-i18n="conceptTitle">Privacy, atmosphere, and restraint.</h2>
+        </div>
+        <div>
+          <div class="intro-quote" data-i18n="quoteText">A quieter, more refined alternative to the expected date night.</div>
+          <p class="muted" data-i18n="conceptText">The concept is intentionally selective. Rather than offering a crowded sequence of experiences, Maison de Minuit focuses on privacy, clarity, and a setting designed to feel composed from beginning to end.</p>
+        </div>
+      </div>
+
+      <div class="container info-grid">
+        <article class="info-block">
+          <div class="detail-number">01</div>
+          <h3 data-i18n="info1Title">Private setting</h3>
+          <p data-i18n="info1Text">A reserved environment created for two, away from the pace and distractions of public venues.</p>
+        </article>
+        <article class="info-block">
+          <div class="detail-number">02</div>
+          <h3 data-i18n="info2Title">Curated atmosphere</h3>
+          <p data-i18n="info2Text">Light, space, rhythm, and mood are considered with intention to create a calm and elevated experience.</p>
+        </article>
+        <article class="info-block">
+          <div class="detail-number">03</div>
+          <h3 data-i18n="info3Title">Select occasions</h3>
+          <p data-i18n="info3Text">Especially suited to anniversaries, proposals, meaningful surprises, and evenings that deserve greater discretion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container details-wrap">
+        <div class="details-visual"></div>
+        <div class="details-list">
+          <p class="section-label" data-i18n="experienceLabel">Das Erlebnis</p>
+          <h2 data-i18n="experienceTitle">An experience shaped with intention.</h2>
+          <div class="detail">
+            <h3 data-i18n="detail1Title">Arrival</h3>
+            <p data-i18n="detail1Text">The evening begins with a calm transition from the outside world into a private and composed setting.</p>
+          </div>
+          <div class="detail">
+            <h3 data-i18n="detail2Title">Shared time</h3>
+            <p data-i18n="detail2Text">Conversation, cooking, light playfulness, and quiet moments unfold naturally without feeling scheduled.</p>
+          </div>
+          <div class="detail">
+            <h3 data-i18n="detail3Title">Private close</h3>
+            <p data-i18n="detail3Text">The experience concludes in a more intimate atmosphere designed for stillness, comfort, and presence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq-grid">
+        <div>
+          <p class="section-label">FAQ</p>
+          <h2 data-i18n="faqTitle">Important details at a glance.</h2>
+          <p class="muted" data-i18n="faqText">Essential information presented clearly and discreetly.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button class="faq-question" type="button">
+              <span data-i18n="faq1Q">Ist das eine Übernachtung?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq1A">Nein. Maison de Minuit ist als privates Date-Erlebnis gedacht und nicht als Hotel- oder Übernachtungskonzept positioniert.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span data-i18n="faq2Q">Sind alle Bereiche zugänglich?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq2A">Nein. Nur freigegebene Bereiche gehören zum Erlebnis. Private Zonen bleiben geschlossen.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span data-i18n="faq3Q">Ist das für Partys gedacht?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq3A">Nein. Das Konzept richtet sich an stilvolle, private Abende für Paare und nicht an Partys oder größere Gruppen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="section-label" data-i18n="contactLabel">Kontakt</p>
+          <h2 data-i18n="contactTitle">Submit your inquiry.</h2>
+          <p data-i18n="contactText">Share your occasion, preferred date, and what you have in mind. We will respond personally.</p>
+        </div>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name" data-i18n="formName">Name</label>
+              <input id="name" type="text" placeholder="Ihr Name" />
+            </div>
+            <div class="form-field">
+              <label for="email" data-i18n="formEmail">E-Mail</label>
+              <input id="email" type="email" placeholder="Ihre E-Mail" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="date" data-i18n="formDate">Wunschtermin</label>
+              <input id="date" type="date" />
+            </div>
+            <div class="form-field">
+              <label for="occasion" data-i18n="formOccasion">Anlass</label>
+              <select id="occasion">
+                <option data-i18n="option1">Jubiläum</option>
+                <option data-i18n="option2">Geburtstag</option>
+                <option data-i18n="option3">Antrag</option>
+                <option data-i18n="option4">Date Night</option>
+                <option data-i18n="option5">Sonstiges</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message" data-i18n="formMessage">Nachricht</label>
+            <textarea id="message" placeholder="Erzählen Sie uns kurz von Ihrem Anlass und Ihren Wünschen."></textarea>
+          </div>
+          <button class="button button-solid" type="submit" data-i18n="formSubmit">Anfrage senden</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>© <span id="year"></span> Maison de Minuit</div>
+      <div data-i18n="footerText">Private luxury date experiences in Hamburg.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
