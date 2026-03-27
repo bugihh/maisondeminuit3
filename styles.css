@@ -42,7 +42,7 @@ button, input, select, textarea { font: inherit; }
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1000;
-  background: linear-gradient(180deg, rgba(7,7,7,0.82), rgba(7,7,7,0.46), rgba(7,7,7,0.12));
+  background: linear-gradient(180deg, rgba(7,7,7,0.84), rgba(7,7,7,0.46), transparent);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,255,255,0.04);
 }
@@ -56,21 +56,18 @@ button, input, select, textarea { font: inherit; }
 }
 
 .brand {
-  max-width: 290px;
+  max-width: 260px;
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
 }
 
 .brand-logo {
+  display: block;
   width: 100%;
+  max-width: 260px;
   height: auto;
   object-fit: contain;
-  display: block;
-}
-
-.brand-logo--dark {
-  max-width: 290px;
   opacity: 0.96;
 }
 
@@ -78,7 +75,7 @@ button, input, select, textarea { font: inherit; }
   display: flex;
   justify-content: center;
   gap: 34px;
-  color: rgba(243,237,226,0.76);
+  color: rgba(243,237,226,0.74);
   font-size: 0.93rem;
 }
 
@@ -476,6 +473,17 @@ textarea:focus {
 
 textarea { min-height: 150px; resize: vertical; }
 
+/* Fix dropdown option readability */
+select option {
+  background: #161311;
+  color: #f3ede2;
+}
+
+select optgroup {
+  background: #161311;
+  color: #f3ede2;
+}
+
 .footer {
   padding: 30px 0 42px;
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -525,12 +533,11 @@ textarea { min-height: 150px; resize: vertical; }
   }
 
   .brand {
-    max-width: 200px;
+    max-width: 190px;
   }
 
-  .brand-logo--dark {
-    max-width: 200px;
-    opacity: 0.96;
+  .brand-logo {
+    max-width: 190px;
   }
 
   .hero-inner {
