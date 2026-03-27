@@ -433,7 +433,7 @@ h3 {
   box-shadow: var(--shadow);
   background-image:
     linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.24)),
-    url('./images/pic2.png');
+    url('./images/backgroundpic.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
