@@ -432,6 +432,7 @@ h3 {
   overflow: hidden;
   box-shadow: var(--shadow);
   position: relative;
+  background: #111;
 }
 
 .details-visual img {
@@ -442,11 +443,6 @@ h3 {
   display: block;
 }
 
-.details-list {
-  display: grid;
-  gap: 18px;
-}
-
 .details-visual::after {
   content: "";
   position: absolute;
@@ -454,6 +450,12 @@ h3 {
   background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.24));
   pointer-events: none;
 }
+
+.details-list {
+  display: grid;
+  gap: 18px;
+}
+
 .detail {
   padding: 26px;
 }
