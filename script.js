@@ -168,12 +168,15 @@ faqItems.forEach((item) => {
   const button = item.querySelector('.faq-question');
   const answer = item.querySelector('.faq-answer');
   if (item.classList.contains('open')) answer.style.maxHeight = `${answer.scrollHeight}px`;
+
   button.addEventListener('click', () => {
     const isOpen = item.classList.contains('open');
+
     faqItems.forEach((other) => {
       other.classList.remove('open');
       other.querySelector('.faq-answer').style.maxHeight = null;
     });
+
     if (!isOpen) {
       item.classList.add('open');
       answer.style.maxHeight = `${answer.scrollHeight}px`;
