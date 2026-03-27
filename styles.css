@@ -42,10 +42,10 @@ button, input, select, textarea { font: inherit; }
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1000;
-  background: linear-gradient(180deg, rgba(7,7,7,0.88), rgba(7,7,7,0.52), rgba(7,7,7,0.10));
+  background: linear-gradient(180deg, rgba(7,7,7,0.90), rgba(7,7,7,0.56), rgba(7,7,7,0.08));
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(183,146,90,0.08);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+  border-bottom: none;
+  box-shadow: none;
   padding-top: 8px;
   padding-bottom: 18px;
 }
@@ -87,8 +87,8 @@ button, input, select, textarea { font: inherit; }
 .desktop-nav a {
   position: relative;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
 }
 
 .desktop-nav a::after {
@@ -238,10 +238,10 @@ button, input, select, textarea { font: inherit; }
 .eyebrow,
 .section-label {
   text-transform: uppercase;
-  letter-spacing: 0.34em;
-  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  font-size: 0.66rem;
   color: var(--gold-soft);
-  margin: 0 0 20px;
+  margin: 0 0 18px;
 }
 
 h1, h2, h3 {
@@ -252,18 +252,18 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: clamp(3.8rem, 7vw, 7rem);
-  max-width: 8ch;
-  margin-bottom: 18px;
-}
-
-h2 {
-  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-size: clamp(3rem, 5.6vw, 5.4rem);
+  max-width: 9ch;
   margin-bottom: 16px;
 }
 
+h2 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  margin-bottom: 14px;
+}
+
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.22rem;
   margin-bottom: 8px;
 }
 
@@ -279,8 +279,8 @@ h3 {
 }
 
 .lead {
-  max-width: 48ch;
-  font-size: 1.04rem;
+  max-width: 50ch;
+  font-size: 0.98rem;
   margin: 0;
 }
 
@@ -588,7 +588,20 @@ select optgroup {
   }
 
   h1 {
-    max-width: 7.8ch;
+    font-size: clamp(2.4rem, 8vw, 3.6rem);
+    max-width: 9ch;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .lead {
+    font-size: 0.95rem;
   }
 
   .header-actions,
