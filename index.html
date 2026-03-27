@@ -30,7 +30,7 @@
           <button class="lang-btn active" data-lang="de" type="button">DE</button>
           <button class="lang-btn" data-lang="en" type="button">EN</button>
         </div>
-        <a href="#contact" class="button button-outline" data-i18n="headerCta">Anfrage</a>
+        <a href="#contact" class="button button-outline" data-i18n="headerCta">Verfügbarkeit anfragen</a>
         <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menü öffnen" aria-expanded="false">
           <span></span>
         </button>
@@ -56,8 +56,8 @@
           <h1 data-i18n="heroTitle">Ein privates Date-Erlebnis in einem außergewöhnlichen Rahmen.</h1>
           <p class="lead" data-i18n="heroText">Maison de Minuit bietet einen privaten Rahmen für Paare, die Diskretion, Atmosphäre und eine hochwertigere Art des Zusammenseins suchen.</p>
           <div class="hero-actions">
-            <a href="#contact" class="button button-solid" data-i18n="heroPrimary">Privaten Abend anfragen</a>
-            <a href="#experience" class="button button-outline" data-i18n="heroSecondary">Mehr erfahren</a>
+            <a href="#contact" class="button button-solid" data-i18n="heroPrimary">Verfügbarkeit anfragen</a>
+            <a href="#offer" class="button button-outline" data-i18n="heroSecondary">Bereiche entdecken</a>
           </div>
           <div class="hero-meta">
             <span data-i18n="meta1">Reservierungsbasiert</span>
@@ -77,24 +77,28 @@
         </div>
 
         <div class="offer-grid">
-          <article class="offer-item">
+          <article class="offer-item offer-card" data-modal="kitchenModal">
             <h3 data-i18n="offer1Title">Offene Küche mit Dining Area</h3>
             <p data-i18n="offer1Text">Ein einladender Bereich für gemeinsames Kochen, Gespräche und einen stilvollen Auftakt des Abends.</p>
+            <span class="offer-link" data-i18n="offerMore">Mehr entdecken</span>
           </article>
 
-          <article class="offer-item">
+          <article class="offer-item offer-card" data-modal="gamingModal">
             <h3 data-i18n="offer2Title">Gaming Room</h3>
             <p data-i18n="offer2Text">Ein spielerischer, hochwertiger Raum für leichte Interaktion und eine aufgelockerte Atmosphäre.</p>
+            <span class="offer-link" data-i18n="offerMore">Mehr entdecken</span>
           </article>
 
-          <article class="offer-item">
+          <article class="offer-item offer-card" data-modal="livingModal">
             <h3 data-i18n="offer3Title">Gemütlicher Living Room</h3>
             <p data-i18n="offer3Text">Ein ruhiger Rückzugsort mit wohnlicher Eleganz für entspannte gemeinsame Zeit.</p>
+            <span class="offer-link" data-i18n="offerMore">Mehr entdecken</span>
           </article>
 
-          <article class="offer-item">
+          <article class="offer-item offer-card" data-modal="cinemaModal">
             <h3 data-i18n="offer4Title">Voll ausgestattetes Home Cinema</h3>
             <p data-i18n="offer4Text">Ein privater Kinoraum für einen stilvollen und intimen Ausklang des Erlebnisses.</p>
+            <span class="offer-link" data-i18n="offerMore">Mehr entdecken</span>
           </article>
         </div>
       </div>
@@ -198,8 +202,8 @@
       <div class="container contact-grid">
         <div class="contact-copy">
           <p class="section-label" data-i18n="contactLabel">Kontakt</p>
-          <h2 data-i18n="contactTitle">Unverbindlich anfragen.</h2>
-          <p data-i18n="contactText">Teilen Sie Anlass, Wunschtermin und Ihre Vorstellung mit. Wir melden uns persönlich zurück.</p>
+          <h2 data-i18n="contactTitle">Verfügbarkeit anfragen.</h2>
+          <p data-i18n="contactText">Teilen Sie Anlass, Wunschtermin und Ihre Vorstellung mit. Wir melden uns persönlich zurück und senden Ihnen anschließend ein individuelles Angebot mit allen Details.</p>
         </div>
 
         <form class="contact-form">
@@ -252,6 +256,83 @@
       </div>
     </div>
   </footer>
+
+  <!-- MODALS -->
+  <div class="modal-overlay" id="kitchenModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" type="button" aria-label="Close modal">×</button>
+      <div class="modal-media">
+        <img src="images/dining.png" alt="Open kitchen and dining area" />
+      </div>
+      <div class="modal-content">
+        <p class="section-label" data-i18n="modalKitchenLabel">Open Kitchen & Dining Area</p>
+        <h2 data-i18n="modalKitchenTitle">Ein stilvoller Beginn des Abends.</h2>
+        <p data-i18n="modalKitchenText">Die offene Küche mit Dining Area schafft einen natürlichen Rahmen für gemeinsames Kochen, Gespräche und einen ruhigen, hochwertigen Einstieg in das Erlebnis. Sie verbindet Großzügigkeit mit Wohnlichkeit und eignet sich ideal für einen entspannten Start in den Abend.</p>
+        <ul class="modal-highlights">
+          <li data-i18n="modalKitchenPoint1">Open-plan layout</li>
+          <li data-i18n="modalKitchenPoint2">Dining atmosphere</li>
+          <li data-i18n="modalKitchenPoint3">Ideal for shared moments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="gamingModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" type="button" aria-label="Close modal">×</button>
+      <div class="modal-media">
+        <img src="images/game.png" alt="Gaming room" />
+      </div>
+      <div class="modal-content">
+        <p class="section-label" data-i18n="modalGamingLabel">Gaming Room</p>
+        <h2 data-i18n="modalGamingTitle">Leichte Interaktion, elegant inszeniert.</h2>
+        <p data-i18n="modalGamingText">Der Gaming Room bringt eine spielerische Dynamik in das Erlebnis, ohne an Stil zu verlieren. Er ist dafür gedacht, den Abend aufzulockern, gemeinsam zu lachen und eine entspannte, besondere Atmosphäre zu schaffen.</p>
+        <ul class="modal-highlights">
+          <li data-i18n="modalGamingPoint1">Relaxed interaction</li>
+          <li data-i18n="modalGamingPoint2">Playful energy</li>
+          <li data-i18n="modalGamingPoint3">Private setting</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="livingModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" type="button" aria-label="Close modal">×</button>
+      <div class="modal-media">
+        <img src="images/living.png" alt="Living room" />
+      </div>
+      <div class="modal-content">
+        <p class="section-label" data-i18n="modalLivingLabel">Living Room</p>
+        <h2 data-i18n="modalLivingTitle">Ein ruhiger Raum für gemeinsame Zeit.</h2>
+        <p data-i18n="modalLivingText">Der Living Room ist als stilvoller Rückzugsort gedacht – warm, ruhig und wohnlich. Er schafft einen Rahmen für entspannte Gespräche, Nähe und die Art von gemeinsamer Zeit, die sich bewusst hochwertig anfühlen soll.</p>
+        <ul class="modal-highlights">
+          <li data-i18n="modalLivingPoint1">Warm atmosphere</li>
+          <li data-i18n="modalLivingPoint2">Elegant design</li>
+          <li data-i18n="modalLivingPoint3">Comfort & calm</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="cinemaModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" type="button" aria-label="Close modal">×</button>
+      <div class="modal-media">
+        <img src="images/cinema.png" alt="Home cinema" />
+      </div>
+      <div class="modal-content">
+        <p class="section-label" data-i18n="modalCinemaLabel">Home Cinema</p>
+        <h2 data-i18n="modalCinemaTitle">Ein intimer Ausklang mit Kinoatmosphäre.</h2>
+        <p data-i18n="modalCinemaText">Das Home Cinema bietet einen ruhigen, immersiven Abschluss des Abends. Es verbindet Komfort mit Privatsphäre und schafft eine Atmosphäre, die bewusst auf gemeinsame Präsenz und einen besonderen Ausklang ausgerichtet ist.</p>
+        <ul class="modal-highlights">
+          <li data-i18n="modalCinemaPoint1">Private cinema feeling</li>
+          <li data-i18n="modalCinemaPoint2">Cozy closing moment</li>
+          <li data-i18n="modalCinemaPoint3">Immersive atmosphere</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
