@@ -431,9 +431,7 @@ h3 {
   border-radius: 34px;
   overflow: hidden;
   box-shadow: var(--shadow);
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.24)),
-    url('./images/pic2.png') center/cover;
+  background: red !important;
 }
 
 .details-list {
