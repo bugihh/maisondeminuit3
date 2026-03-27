@@ -216,7 +216,7 @@ button, input, select, textarea { font: inherit; }
   align-items: end;
   background:
     linear-gradient(180deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.58) 100%),
-    url('home.png') center/cover;
+    url('images/home.png') center/cover;
 }
 
 .hero::after {
