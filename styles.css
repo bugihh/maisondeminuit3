@@ -433,7 +433,7 @@ h3 {
   box-shadow: var(--shadow);
   background:
     linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.24)),
-    url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=2000&q=80') center/cover;
+    url('./images/pic.png') center/cover;
 }
 
 .details-list {
