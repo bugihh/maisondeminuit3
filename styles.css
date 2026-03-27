@@ -42,9 +42,10 @@ button, input, select, textarea { font: inherit; }
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1000;
-  background: linear-gradient(180deg, rgba(7,7,7,0.84), rgba(7,7,7,0.46), transparent);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.025);
+  background: linear-gradient(180deg, rgba(7,7,7,0.88), rgba(7,7,7,0.52), rgba(7,7,7,0.10));
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(183,146,90,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
   padding-top: 8px;
   padding-bottom: 18px;
 }
@@ -270,6 +271,7 @@ h3 {
 .muted,
 .info-block p,
 .detail p,
+.offer-item p,
 .faq-answer p,
 .contact-copy p,
 .footer-wrap {
@@ -306,6 +308,36 @@ h3 {
 
 .section {
   padding: var(--section-space) 0;
+}
+
+.section-head {
+  max-width: 640px;
+}
+
+.offer-head {
+  margin-bottom: 34px;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.offer-item {
+  padding: 28px;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow);
+}
+
+.offer-item h3 {
+  margin-bottom: 10px;
+}
+
+.offer-item p {
+  margin: 0;
 }
 
 .intro-wrap {
@@ -508,6 +540,7 @@ select optgroup {
 
   .menu-toggle { display: inline-block; }
 
+  .offer-grid,
   .intro-wrap,
   .info-grid,
   .details-wrap,
