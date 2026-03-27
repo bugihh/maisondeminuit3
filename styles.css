@@ -433,7 +433,7 @@ h3 {
   box-shadow: var(--shadow);
   background:
     linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.24)),
-    url('./images/pic.png') center/cover;
+    url('./images/pic2.png') center/cover;
 }
 
 .details-list {
