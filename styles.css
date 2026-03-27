@@ -431,12 +431,15 @@ h3 {
   border-radius: 34px;
   overflow: hidden;
   box-shadow: var(--shadow);
-  background-image:
-    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.24)),
-    url('./images/backgroundpic.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+}
+
+.details-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  display: block;
 }
 
 .details-list {
@@ -444,6 +447,13 @@ h3 {
   gap: 18px;
 }
 
+.details-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.24));
+  pointer-events: none;
+}
 .detail {
   padding: 26px;
 }
