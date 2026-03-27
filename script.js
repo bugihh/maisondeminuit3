@@ -5,12 +5,12 @@ const translations = {
     navExperience: 'Erlebnis',
     navFaq: 'FAQ',
     navContact: 'Kontakt',
-    headerCta: 'Anfrage',
+    headerCta: 'Verfügbarkeit anfragen',
     heroEyebrow: 'Private Date Experience · Hamburg',
     heroTitle: 'Ein privates Date-Erlebnis in einem außergewöhnlichen Rahmen.',
     heroText: 'Maison de Minuit bietet einen privaten Rahmen für Paare, die Diskretion, Atmosphäre und eine hochwertigere Art des Zusammenseins suchen.',
-    heroPrimary: 'Privaten Abend anfragen',
-    heroSecondary: 'Mehr erfahren',
+    heroPrimary: 'Verfügbarkeit anfragen',
+    heroSecondary: 'Bereiche entdecken',
     meta1: 'Reservierungsbasiert',
     meta2: 'Diskret',
     meta3: 'Für besondere Anlässe',
@@ -26,6 +26,35 @@ const translations = {
     offer3Text: 'Ein ruhiger Rückzugsort mit wohnlicher Eleganz für entspannte gemeinsame Zeit.',
     offer4Title: 'Voll ausgestattetes Home Cinema',
     offer4Text: 'Ein privater Kinoraum für einen stilvollen und intimen Ausklang des Erlebnisses.',
+    offerMore: 'Mehr entdecken',
+
+    modalKitchenLabel: 'Open Kitchen & Dining Area',
+    modalKitchenTitle: 'Ein stilvoller Beginn des Abends.',
+    modalKitchenText: 'Die offene Küche mit Dining Area schafft einen natürlichen Rahmen für gemeinsames Kochen, Gespräche und einen ruhigen, hochwertigen Einstieg in das Erlebnis. Sie verbindet Großzügigkeit mit Wohnlichkeit und eignet sich ideal für einen entspannten Start in den Abend.',
+    modalKitchenPoint1: 'Open-plan layout',
+    modalKitchenPoint2: 'Dining atmosphere',
+    modalKitchenPoint3: 'Ideal for shared moments',
+
+    modalGamingLabel: 'Gaming Room',
+    modalGamingTitle: 'Leichte Interaktion, elegant inszeniert.',
+    modalGamingText: 'Der Gaming Room bringt eine spielerische Dynamik in das Erlebnis, ohne an Stil zu verlieren. Er ist dafür gedacht, den Abend aufzulockern, gemeinsam zu lachen und eine entspannte, besondere Atmosphäre zu schaffen.',
+    modalGamingPoint1: 'Relaxed interaction',
+    modalGamingPoint2: 'Playful energy',
+    modalGamingPoint3: 'Private setting',
+
+    modalLivingLabel: 'Living Room',
+    modalLivingTitle: 'Ein ruhiger Raum für gemeinsame Zeit.',
+    modalLivingText: 'Der Living Room ist als stilvoller Rückzugsort gedacht – warm, ruhig und wohnlich. Er schafft einen Rahmen für entspannte Gespräche, Nähe und die Art von gemeinsamer Zeit, die sich bewusst hochwertig anfühlen soll.',
+    modalLivingPoint1: 'Warm atmosphere',
+    modalLivingPoint2: 'Elegant design',
+    modalLivingPoint3: 'Comfort & calm',
+
+    modalCinemaLabel: 'Home Cinema',
+    modalCinemaTitle: 'Ein intimer Ausklang mit Kinoatmosphäre.',
+    modalCinemaText: 'Das Home Cinema bietet einen ruhigen, immersiven Abschluss des Abends. Es verbindet Komfort mit Privatsphäre und schafft eine Atmosphäre, die bewusst auf gemeinsame Präsenz und einen besonderen Ausklang ausgerichtet ist.',
+    modalCinemaPoint1: 'Private cinema feeling',
+    modalCinemaPoint2: 'Cozy closing moment',
+    modalCinemaPoint3: 'Immersive atmosphere',
 
     conceptLabel: 'Das Konzept',
     conceptTitle: 'Privatsphäre, Atmosphäre und Zurückhaltung.',
@@ -58,8 +87,8 @@ const translations = {
     faq3A: 'Nein. Das Konzept richtet sich an stilvolle, private Abende für Paare und nicht an Partys oder größere Gruppen.',
 
     contactLabel: 'Kontakt',
-    contactTitle: 'Unverbindlich anfragen.',
-    contactText: 'Teilen Sie Anlass, Wunschtermin und Ihre Vorstellung mit. Wir melden uns persönlich zurück.',
+    contactTitle: 'Verfügbarkeit anfragen.',
+    contactText: 'Teilen Sie Anlass, Wunschtermin und Ihre Vorstellung mit. Wir melden uns persönlich zurück und senden Ihnen anschließend ein individuelles Angebot mit allen Details.',
     formName: 'Name',
     formEmail: 'E-Mail',
     formDate: 'Wunschtermin',
@@ -80,12 +109,12 @@ const translations = {
     navExperience: 'Experience',
     navFaq: 'FAQ',
     navContact: 'Contact',
-    headerCta: 'Inquiry',
+    headerCta: 'Check availability',
     heroEyebrow: 'Private Date Experience · Hamburg',
     heroTitle: 'A private date experience in an exceptional setting.',
     heroText: 'Maison de Minuit offers a private setting for couples seeking discretion, atmosphere, and a more elevated way to spend time together.',
-    heroPrimary: 'Inquire about your private evening',
-    heroSecondary: 'Learn more',
+    heroPrimary: 'Check availability',
+    heroSecondary: 'Explore the spaces',
     meta1: 'Reservation-based',
     meta2: 'Discrete',
     meta3: 'For special occasions',
@@ -101,6 +130,35 @@ const translations = {
     offer3Text: 'A calm retreat with residential elegance for relaxed time together.',
     offer4Title: 'Fully equipped home cinema',
     offer4Text: 'A private cinema room for a stylish and intimate close to the experience.',
+    offerMore: 'Discover more',
+
+    modalKitchenLabel: 'Open Kitchen & Dining Area',
+    modalKitchenTitle: 'A refined beginning to the evening.',
+    modalKitchenText: 'The open kitchen and dining area creates a natural setting for cooking together, conversation, and a calm, elevated start to the experience. It combines spaciousness with warmth and is ideal for an elegant opening to the evening.',
+    modalKitchenPoint1: 'Open-plan layout',
+    modalKitchenPoint2: 'Dining atmosphere',
+    modalKitchenPoint3: 'Ideal for shared moments',
+
+    modalGamingLabel: 'Gaming Room',
+    modalGamingTitle: 'Light interaction, elegantly framed.',
+    modalGamingText: 'The gaming room introduces a playful dynamic without losing its refined character. It is designed to add ease, laughter, and a more relaxed rhythm to the evening.',
+    modalGamingPoint1: 'Relaxed interaction',
+    modalGamingPoint2: 'Playful energy',
+    modalGamingPoint3: 'Private setting',
+
+    modalLivingLabel: 'Living Room',
+    modalLivingTitle: 'A quiet room for time together.',
+    modalLivingText: 'The living room is designed as a stylish retreat — warm, calm, and residential. It creates space for conversation, comfort, and the kind of shared time that feels intentionally elevated.',
+    modalLivingPoint1: 'Warm atmosphere',
+    modalLivingPoint2: 'Elegant design',
+    modalLivingPoint3: 'Comfort & calm',
+
+    modalCinemaLabel: 'Home Cinema',
+    modalCinemaTitle: 'An intimate close with cinema atmosphere.',
+    modalCinemaText: 'The home cinema offers a calm, immersive ending to the evening. It combines comfort with privacy and creates a setting designed for presence, stillness, and a memorable close.',
+    modalCinemaPoint1: 'Private cinema feeling',
+    modalCinemaPoint2: 'Cozy closing moment',
+    modalCinemaPoint3: 'Immersive atmosphere',
 
     conceptLabel: 'The concept',
     conceptTitle: 'Privacy, atmosphere, and restraint.',
@@ -133,8 +191,8 @@ const translations = {
     faq3A: 'No. The concept is for stylish private evenings for couples, not for parties or larger groups.',
 
     contactLabel: 'Contact',
-    contactTitle: 'Submit your inquiry.',
-    contactText: 'Share your occasion, preferred date, and what you have in mind. We will respond personally.',
+    contactTitle: 'Check availability.',
+    contactText: 'Share your occasion, preferred date, and what you have in mind. We will respond personally and send you an individual offer with all relevant details.',
     formName: 'Name',
     formEmail: 'Email',
     formDate: 'Preferred date',
@@ -226,6 +284,50 @@ faqItems.forEach((item) => {
       answer.style.maxHeight = `${answer.scrollHeight}px`;
     }
   });
+});
+
+const modalTriggers = document.querySelectorAll('[data-modal]');
+const modals = document.querySelectorAll('.modal-overlay');
+
+function closeAllModals() {
+  modals.forEach((modal) => {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+  });
+  document.body.classList.remove('modal-open');
+}
+
+modalTriggers.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    const targetId = trigger.getAttribute('data-modal');
+    const targetModal = document.getElementById(targetId);
+    if (!targetModal) return;
+
+    closeAllModals();
+    targetModal.classList.add('open');
+    targetModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+  });
+});
+
+modals.forEach((modal) => {
+  const closeBtn = modal.querySelector('.modal-close');
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeAllModals);
+  }
+
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeAllModals();
+    }
+  });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeAllModals();
+  }
 });
 
 const savedLanguage = localStorage.getItem('mdm-language') || 'de';
