@@ -338,12 +338,32 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.offer-card {
+  cursor: pointer;
+  transition: transform .22s ease, border-color .22s ease, background .22s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(183,146,90,0.24);
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+}
+
 .offer-item h3 {
   margin-bottom: 10px;
 }
 
 .offer-item p {
   margin: 0;
+}
+
+.offer-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--gold-soft);
 }
 
 .intro-wrap {
@@ -583,6 +603,95 @@ select optgroup {
   padding: 32px;
 }
 
+/* MODALS */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 7, 7, 0.76);
+  backdrop-filter: blur(10px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 3000;
+}
+
+.modal-overlay.open {
+  display: flex;
+}
+
+.modal-box {
+  width: min(1080px, 100%);
+  max-height: 90vh;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  background: linear-gradient(180deg, rgba(24,22,20,0.98), rgba(16,15,14,0.98));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 28px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.42);
+  position: relative;
+}
+
+.modal-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  display: block;
+  border-radius: 28px 0 0 28px;
+}
+
+.modal-content {
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 14px;
+}
+
+.modal-content p {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.modal-highlights {
+  margin: 18px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.modal-highlights li + li {
+  margin-top: 8px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.modal-close:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
 @media (max-width: 1100px) {
   .desktop-nav,
   .button-outline {
@@ -611,6 +720,21 @@ select optgroup {
 
   .details-visual {
     min-height: 420px;
+  }
+}
+
+@media (max-width: 900px) {
+  .modal-box {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-media img {
+    min-height: 280px;
+    border-radius: 28px 28px 0 0;
+  }
+
+  .modal-content {
+    padding: 28px 24px 30px;
   }
 }
 
