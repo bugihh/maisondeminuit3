@@ -274,7 +274,9 @@ h3 {
 .offer-item p,
 .faq-answer p,
 .contact-copy p,
-.footer-wrap {
+.footer-wrap,
+.legal-page p,
+.legal-page li {
   color: var(--muted);
 }
 
@@ -366,7 +368,8 @@ h3 {
 .info-block,
 .detail,
 .contact-form,
-.faq-item {
+.faq-item,
+.legal-card {
   background: linear-gradient(180deg, var(--panel-strong), var(--panel));
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: var(--shadow);
@@ -532,6 +535,50 @@ select optgroup {
   font-size: 0.93rem;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
+.legal-page {
+  padding-top: 180px;
+  padding-bottom: 90px;
+}
+
+.legal-wrap {
+  max-width: 900px;
+}
+
+.legal-page h1 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  max-width: none;
+  margin-bottom: 18px;
+}
+
+.legal-page h2 {
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  margin-top: 38px;
+  margin-bottom: 12px;
+}
+
+.legal-page ul {
+  padding-left: 20px;
+}
+
+.legal-card {
+  padding: 32px;
+}
+
 @media (max-width: 1100px) {
   .desktop-nav,
   .button-outline {
@@ -607,5 +654,14 @@ select optgroup {
   .header-actions,
   .hero-actions {
     flex-wrap: wrap;
+  }
+
+  .legal-page {
+    padding-top: 160px;
+    padding-bottom: 70px;
+  }
+
+  .legal-card {
+    padding: 24px;
   }
 }
